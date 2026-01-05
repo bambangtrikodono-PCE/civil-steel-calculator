@@ -53,6 +53,25 @@ python main.py
 - `data/`: CSV database of steel profiles (`profiles.csv`).
 - `tests/`: Verification scripts (`verify_logic.py`, etc.).
 
+## Project Portfolio Context (STAR Method)
+
+**Situation:**
+Structural engineers often face a gap between manual calculations, which are prone to human error and time-consuming, and expensive commercial software that can be overkill for individual component checks. There was a need for a lightweight, verifiable, and standard-compliant tool for Indonesian civil engineers working with SNI 1729 / AISC 360 standards.
+
+**Task:**
+The objective was to develop a custom desktop application capable of performing rigorous structural steel analysis (Tension, Compression, Flexure, Beam-Column, and Connections). The tool required a modern, user-friendly interface, instant visual feedback, and the ability to generate professional PDF calculation reports for design documentation.
+
+**Action:**
+- **Architecture**: Designed a modular Python application separating core engineering logic from the GUI.
+- **Implementation**: Coded complex structural algorithms including Lateral-Torsional Buckling (LTB) and Interaction Equations (H1-1a/b).
+- **Interface**: Built a responsive dark-mode GUI using `customtkinter` with a scrollable dashboard layout.
+- **Visualization**: Integrated `matplotlib` to dynamically render cross-sections (WF, H-Beam, HSS) based on user selection.
+- **Reporting**: Developed a PDF engine using `reportlab` to automatically generate calculation notes.
+- **Verification**: Wrote comprehensive unit tests (`unittest`) to validate calculations against hand-solved examples.
+
+**Result:**
+"Civil Engineering" is a fully functional, verifiable structural calculator that reduces component design time by significantly automating repetitive checks. It delivers accurate results compliant with national standards, provides immediate visual confirmation of profiles, and produces ready-to-print reports, demonstrating a strong command of both Structural Engineering principles and Python Software Development.
+
 ## Dependencies
 
 - `customtkinter`: Modern GUI framework.
